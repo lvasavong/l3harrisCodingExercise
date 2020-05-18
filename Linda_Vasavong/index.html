@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Pet Store</title>
+        <link rel="icon" type="image/png" href="images/cat.png">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        
+    </head>
+
+    <body>
+        
+        <audio id="catAudio" muted="muted">
+            <source src="sounds/cat-sound.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="dogAudio" muted="muted">
+            <source src="sounds/dog-sound.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="birdAudio" muted="muted">
+            <source src="sounds/bird-sound.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <main role="main">
+            <section class="jumbotron text-center">
+                <div class="box bounce-5 container">
+                    <h1>Animal Sounds</h1>
+                    <p class="lead text-muted" id="instruction">Please click play below to listen to some animal sounds.</p>
+                    <p>
+                        <a class="btn btn-outline-dark btn-lg" id="play">Play</a>
+                    </p>
+                    <p class="lead text-muted" id="cat" style="display:none;">MEOW!</p>
+                    <p class="lead text-muted" id="dog" style="display:none;">WOOF!</p>
+                    <p class="lead text-muted" id="bird" style="display:none;">TWEET!</p>
+                </div>
+            </section>
+            <div class="album py-5 bg-light">
+                <div class="container">
+                    <!-- Grid row -->
+                    <div class="gallery" id="gallery">
+
+                        <!-- Grid column -->
+                        <div class="mb-3 pics animation all 2" id="cat1_back" style="background: red; box-shadow: -8px 0px 6px -6px black;">
+                            <img class="img-fluid" id="cat1_front" src="images/cat1.jpg" alt="Laying cat">
+                        </div>
+                        <!-- Grid column -->
+                    
+                        <!-- Grid column -->
+                        <div class="mb-3 pics animation all 1" id="bird2_back" style="background: yellow; box-shadow: -8px 0px 6px -6px black;">
+                            <img class="img-fluid" id="bird2_front" src="images/bird.jpg" alt="Colorful bird">
+                        </div>
+                        <!-- Grid column -->
+                    
+                        <!-- Grid column -->
+                        <div class="mb-3 pics animation all 1" id="bird1_back" style="background: yellow; box-shadow: -8px 0px 6px -6px black;">
+                            <img class="img-fluid" id="bird1_front" src="images/bird1.jpg" alt="Small bird">
+                        </div>
+                        <!-- Grid column -->
+                    
+                        <!-- Grid column -->
+                        <div class="mb-3 pics animation all 2" id="cat2_back" style="background: red; box-shadow: -8px 0px 6px -6px black;">
+                            <img class="img-fluid" id="cat2_front" src="images/cat2.jpg" alt="Hunting cat">
+                        </div>
+                        <!-- Grid column -->
+                    
+                        <!-- Grid column -->
+                        <div class="mb-3 pics animation all 2" id="dog2_back" style="background: blue; box-shadow: -8px 0px 6px -6px black;">
+                            <img class="img-fluid" id="dog2_front" src="images/dog1.jpg" alt="Happy dog">
+                        </div>
+                        <!-- Grid column -->
+                    
+                        <!-- Grid column -->
+                        <div class="mb-3 pics animation all 1" id="dog1_back" style="background: blue; box-shadow: -8px 0px 6px -6px black;">
+                            <img class="img-fluid" id="dog1_front" src="images/dog.jpg" alt="Snow dog">
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="mb-3 pics animation all 2" id="cat3_back" style="background: red; box-shadow: -8px 0px 6px -6px black;">
+                            <img class="img-fluid" id="cat3_front" src="images/cat3.jpg" alt="Staring cat">
+                        </div>
+                        <!-- Grid column -->
+                    
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </div>
+        </main>
+
+        <footer class="text-muted">
+            <div class="container">
+                <div class="text-center"><span style='font-size:50px;'>&#128512;</span></div>
+            </div>
+        </footer>
+        
+        <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="jquery.color.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+        <script src="js/index.js" type="text/javascript"></script>
+    </body>
+</html>

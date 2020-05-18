@@ -1,0 +1,76 @@
+body, html {
+    font-family: monaco;
+}
+
+/*Jumbotron*/
+.jumbotron {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin: 0;
+    background-color: #fff;
+}
+@media (min-width: 480px) {
+    .jumbotron {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+}
+.jumbotron h1 {
+    font-weight: 300;
+}
+
+/*Button*/
+#play:hover {
+    color: white;
+}
+
+/*Bounce*/
+.box {
+    align-self: flex-end;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    margin: 0 auto 0 auto;
+    transform-origin: bottom;
+}
+.bounce-5 {
+    animation-name: bounce-5;
+    animation-timing-function: ease;
+}
+@keyframes bounce-5 {
+    0%   { transform: scale(1,1)    translateY(0); }
+    10%  { transform: scale(1.1,.9) translateY(0); }
+    30%  { transform: scale(.9,1.1) translateY(-100px); }
+    50%  { transform: scale(1,1)    translateY(0); }
+    57%  { transform: scale(1,1)    translateY(-7px); }
+    64%  { transform: scale(1,1)    translateY(0); }
+    100% { transform: scale(1,1)    translateY(0); }
+}
+
+/*Gallery*/
+.gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%; 
+}
+.gallery .pics {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+}
+.gallery .animation {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); 
+}
+@media (max-width: 450px) {
+    .gallery {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-width: 100%;
+        -moz-column-width: 100%;
+        column-width: 100%;
+    }
+}
